@@ -1,0 +1,112 @@
+@font-face {
+    font-family: "Averox", sans-serif;
+    src: url(Assets/fonts/averox.woff2) format("woff2");
+}
+
+
+body {
+    font-family: "Exo 2", monospace;
+    height: 100vh;
+    display: grid;
+    place-items: center;
+    background-color: #333;
+    color: white;
+}
+
+.wrapper {
+    min-width: 56.25rem;
+    max-width: 90rem;
+    border: 3px solid white;
+    padding: 1.5rem;
+}
+
+
+
+header {
+    height: 5rem;
+    padding: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 3rem;
+}
+
+h1,
+h2 {
+    letter-spacing: 5px;
+    font-family: "Averox", sans-serif;
+}
+
+h1 {
+    font-size: 2.5rem;
+}
+
+h2 {
+    font-size: 1.25rem;
+}
+
+p {
+    margin-bottom: .375rem;
+}
+
+
+.nine--thousand {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.game--title {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+    justify-content: center;
+}
+
+.game--core {
+    margin-top: 3rem;
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    row-gap: 3rem;
+    justify-items: center;
+}
+
+.num--atual {
+    width: 7.8125rem;
+    height: 7.8125rem;
+    border: 2px solid white;
+    grid-column: 1/-1;
+    display: grid;
+    place-items: center;
+    font-size: 6rem;
+}
+
+.container--guess {
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    width: fit-content;
+}
+
+.game--control {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.game--stats {
+    display: grid;
+    grid-template-columns: auto auto;
+    gap: .75rem;
+    align-items: center;
+    font-size: 1.25rem;
+}
+
+/* Generics */
+button {
+    font-weight: 600;
+    font-family: inherit;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    min-height: 3rem;
+    min-width: 7.75rem;
+    padding: .5rem 1rem;
+}
