@@ -1,6 +1,6 @@
 @font-face {
-    font-family: "Averox", sans-serif;
-    src: url(Assets/fonts/averox.woff2) format("woff2");
+    font-family: "Averox";
+    src: url(./Assets/fonts/averox.woff2) format("woff2");
 }
 
 .text--grad {
