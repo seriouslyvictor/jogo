@@ -3,6 +3,13 @@
     src: url(Assets/fonts/averox.woff2) format("woff2");
 }
 
+.text--grad {
+    background-image: linear-gradient(-45deg, hsl(299, 100%, 70%) 0%, #00dbde 100%);
+    -webkit-text-fill-color: transparent;
+    color: transparent;
+    background-clip: text;
+    -webkit-background-clip: text;
+}
 
 body {
     background: url(Assets/space.jpg) no-repeat fixed;
@@ -93,6 +100,7 @@ p {
     display: grid;
     place-items: center;
     font-size: 6rem;
+    text-shadow: -4px 7px 20px #fc00ff, -2px -3px 15px #00dbde;
 }
 
 .container--guess {
