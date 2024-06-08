@@ -16,11 +16,14 @@
 </head>
 
 <body>
+    <div class="video--container">
+        <video id="background--video" src="Assets/space-background.webm" autoplay muted loop></video>
+    </div>
     <div class="wrapper">
         <header class="game--header">
-            <button class="btn--rules">Como jogar?</button>
-            <h2>best: <span class="num--best">0</span></h2>
-            <button class="btn--sobre">Sobre</button>
+            <button class="regular btn--rules">Como jogar?</button>
+            <h2>BEST: <span class="num--best">0</span></h2>
+            <button class="regular btn--sobre">Sobre</button>
         </header>
 
         <div class="game--title">
@@ -31,13 +34,13 @@
             </div>
         </div>
         <main class="game--core">
-            <div class="num--atual">0</div>
+            <div class="num--atual"> </div>
             <section class="container--guess">
-                <button class="btn--alto">Mais alto</button>
-                <button class="btn--alto">Mais baixo</button>
+                <button id="btn--alto" onclick="verificarAcerto('alto')">Mais alto</button>
+                <button id="btn--baixo" onclick="verificarAcerto('baixo')">Mais baixo</button>
             </section>
             <section class="game--control">
-                <button class="btn--start">Começar!</button>
+                <button id="btn--start">Começar!</button>
                 <div class="game--stats">
                     <h2>vitórias:</h2> <span class="num--vit">0</span>
                     <h2>derrotas:</h2> <span class="num--der">0</span>
